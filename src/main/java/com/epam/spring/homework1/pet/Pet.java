@@ -11,7 +11,7 @@ public class Pet {
     private List<Animal> animals;
 
     public void printPets(){
-        for (Animal an:animals) {
+        for (Animal an : animals) {
             System.out.println(an.getAnimal());
         }
     }

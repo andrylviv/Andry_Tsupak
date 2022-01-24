@@ -20,4 +20,3 @@ public class PetConfig {
         return new Cheetah();
     }
 }
-
