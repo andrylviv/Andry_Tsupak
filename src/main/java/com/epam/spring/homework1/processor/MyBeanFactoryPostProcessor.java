@@ -9,7 +9,6 @@ public class MyBeanFactoryPostProcessor implements BeanFactoryPostProcessor {
 
     @Override
     public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
-
         System.out.println("BeanFactoryPostProcessor begin");
         String[] names = beanFactory.getBeanDefinitionNames();
         for (String name : names) {
@@ -22,4 +21,3 @@ public class MyBeanFactoryPostProcessor implements BeanFactoryPostProcessor {
         System.out.println("BeanFactoryPostProcessor end");
     }
 }
-

@@ -1,7 +1,6 @@
 package com.epam.spring.homework1.beans;
 
 import com.epam.spring.homework1.abstraction.Validator;
-
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
@@ -28,6 +27,7 @@ public class BeanE implements Validator {
                 ", value=" + value +
                 '}';
     }
+
     @PostConstruct
     public void postConstruct(){
         System.out.println("inside beanE @PostConstruct");

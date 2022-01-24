@@ -11,6 +11,10 @@ public class Main {
         for (String beanDefinitionName:context.getBeanDefinitionNames()) {
             System.out.println(beanDefinitionName);
         }
-       ((AnnotationConfigApplicationContext) context).close();
+
+        for (String beanDefinitionName:context.getBeanDefinitionNames()) {
+            System.out.println(((AnnotationConfigApplicationContext) context).getBeanDefinition(beanDefinitionName));
+        }
+        ((AnnotationConfigApplicationContext) context).close();
     }
 }
