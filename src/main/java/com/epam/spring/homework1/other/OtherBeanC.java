@@ -6,11 +6,10 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class OtherBeanC {
+    @Autowired
+    private BeanC beanC;
 
     public OtherBeanC() {
         System.out.println(beanC);
     }
-
-    @Autowired
-    BeanC beanC;
 }
